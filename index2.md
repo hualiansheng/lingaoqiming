@@ -7,7 +7,7 @@ category: 2
   <ul>
     {% assign page_list = site.categories['2'] | sort:"date" %}
     {% for post in page_list %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </ul>
