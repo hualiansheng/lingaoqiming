@@ -30,14 +30,14 @@ layout: layout
   <hr/>
       <ul class="pagination">
         {% if page.previous %}
-          <li class="prev"><a href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">上一节</a></li>
+          <li class="prev"><a href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">上一节</a></li>
         {% else %}
           <li class="prev disabled"><a>上一节</a></li>
         {% endif %}
-          <li><a href="{{ category_url | prepend: site.baseurl }}">回目录</a></li>
+          <li><a href="{{ category_url | relative_url }}">回目录</a></li>
           <li><a href="https://github.com/lingaoqiming/lingaoqiming.github.com/tree/master/_posts/{{page.path}}">编辑本页</a></li>
         {% if page.next %}
-          <li class="next"><a href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">下一节 </a></li>
+          <li class="next"><a href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">下一节 </a></li>
         {% else %}
           <li class="next disabled"><a>下一节 </a>
         {% endif %}

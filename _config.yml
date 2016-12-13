@@ -7,7 +7,7 @@ author:
   email: lingaoqiming2104@sina.com
   github: lingaoqiming
 
-markdown: rdiscount
+markdown: kramdown
 permalink:  none
 baseurl: /lingaoqiming
 img_url: /lingaoqiming/images

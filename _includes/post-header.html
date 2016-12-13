@@ -3,7 +3,7 @@
 	  <img src="{{ site.img_url }}/timg.jpg" width="56px" height="56px">
 	  <a href="{{ site.baseurl }}">{{ site.top-title }}</a>
   	  {% if category_title %}
-  	    <a href="{{ category_url | prepend: site.baseurl }}">{{ category_title }}</a>
+  	    <a href="{{ category_url | relative_url }}">{{ category_title }}</a>
   	  {% endif%}
   </span>
 </div>
