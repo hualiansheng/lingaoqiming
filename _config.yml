@@ -8,9 +8,10 @@ author:
   github: lingaoqiming
 
 markdown: kramdown
-permalink:  none
+permalink: none
 baseurl: /lingaoqiming
 img_url: /lingaoqiming/images
+font_url: /lingaoqiming/fonts
 
 collections:
   characters:

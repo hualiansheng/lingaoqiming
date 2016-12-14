@@ -5,7 +5,7 @@
   {% include html-header.html %}
   <body>
     {% include page-header.html %}
-    {% assign pages_list = site.pages %}
+    {% assign pages_list = site.html_pages %}
     {% assign category_url = page.url %}
     {% include sidebar.html %}
     <div class="wrapper">
@@ -18,10 +18,10 @@
 	{{ content }}
 
 	<br/>
-	<footer>
-	  
+	<footer>  
 	  <span class="credits right">
 	    Hosted on GitHub Pages 
+	  </span>
 	</footer>
       </section>
     </div>
